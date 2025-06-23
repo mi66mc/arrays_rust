@@ -1,3 +1,11 @@
+mod array;
+
+use array::RawArray;
+
 fn main() {
-    println!("Hello, world!");
+    let mut array = RawArray::new(8);
+
+    array.push(2);
+
+    println!("{:?}", array);
 }
